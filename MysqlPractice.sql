@@ -30,3 +30,23 @@ WHERE name = 'Bill' OR name = 'Charlie';
 UPDATE employee_payroll
 SET gender = 'F'
 WHERE name = 'Terisa';
+
+SELECT gender, SUM(salary) 
+FROM employee_payroll
+GROUP BY gender;
+
+SELECT gender, AVG(salary)
+FROM employee_payroll
+GROUP BY gender;
+
+SELECT gender, MIN(salary)
+FROM employee_payroll
+GROUP BY gender;
+
+SELECT gender, MAX(salary)
+FROM employee_payroll
+GROUP BY gender;
+
+SELECT gender, COUNT(*)
+FROM employee_payroll
+GROUP BY gender;
