@@ -16,3 +16,6 @@ INSERT INTO employee_payroll (name, salary, start) VALUES
 ('Terisa', 90000, '2020-05-21');
 
 SELECT * FROM employee_payroll;
+
+SELECT salary FROM employee_payroll
+WHERE name = 'Bill';
