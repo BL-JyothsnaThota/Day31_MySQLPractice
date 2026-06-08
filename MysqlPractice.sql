@@ -19,3 +19,14 @@ SELECT * FROM employee_payroll;
 
 SELECT salary FROM employee_payroll
 WHERE name = 'Bill';
+
+ALTER TABLE employee_payroll
+ADD gender CHAR(1) AFTER name;
+
+UPDATE employee_payroll
+SET gender = 'M'
+WHERE name = 'Bill' OR name = 'Charlie';
+
+UPDATE employee_payroll
+SET gender = 'F'
+WHERE name = 'Terisa';
